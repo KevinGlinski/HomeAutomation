@@ -1,0 +1,25 @@
+<div style="height:120px; width:300px">
+
+
+  <div class="flip">
+    <div class="card">
+      <div class="face front">
+        <div class="light" ng-click="toggleLight(light.id)">
+          <img style="position:absolute; opacity:.5" src="/assets/images/light-off.png">
+          <img style="position:absolute" ng-style="{'opacity' : light.level/100}" src="/assets/images/light-on.png">
+
+          <div style="margin-top:100px;position:absolute;margin-left:110px">
+            Level: {{light.level}}%
+
+          </div>
+        </div>
+      </div>
+      <div class="face back" style="height:120px">
+        <button class='lightDetailsCloseButton'> Close</button>
+        ID: {{light.id}}
+        Level: {{light.level}}%
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="my.home.homeautomation.lighting"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All Lighting"
+        android:id="@+id/textView" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
+
+            <Switch
+                android:layout_width="152dp"
+                android:layout_height="40dp"
+                android:text="Lights"
+                android:id="@+id/switch1"
+                android:layout_weight="0.82" />
+
+            <SeekBar
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_weight="1"
+        android:progress="20"
+        android:layout_width="fill_parent" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/toggleButton3a"
+                android:layout_column="1"
+                android:width="200dp"
+                android:textOff="All On"
+                android:textOn="All On" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All On"
+            android:id="@+id/toggleButton3b"
+            android:layout_column="2"
+            android:width="200dp"
+            android:textOff="All Off"
+            android:textOn="All Off"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton3"
+            android:layout_column="3"
+            android:width="200dp"
+            android:textOff="Game"
+            android:textOn="Game"/>
+
+    </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

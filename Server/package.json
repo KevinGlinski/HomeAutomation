@@ -1,0 +1,12 @@
+
+{
+	"name": "node-api",
+	"main": "server.js",
+	"dependencies": {
+		"express": "~4.0.0",
+		"body-parser": "~1.0.1",
+		"serve-static" : "~1.5.3",
+		"connect" : "2.25.7",
+		"seiyria-bootstrap-slider":"3.1.0"
+	}
+}
