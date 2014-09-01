@@ -52,12 +52,12 @@ automationApp.factory('sceneService', function($http){
     function getLights(location)
     {
       if (lightData == null)
-      {
-        return emptyScene
-      }
+        {
+          return emptyScene
+        }
 
-      return lightData[location];
-    }
+        return lightData[location];
+      }
 
       function setAllLights(location, level){
         $http.post('/api/setalllights', {"location": location, "level":level});
@@ -72,6 +72,41 @@ automationApp.factory('sceneService', function($http){
         getLights : getLights,
         setAllLights : setAllLights,
         setLight : setLight
+      }
+
+    });
+
+    automationApp.factory('deviceService', function($http){
+
+      function dvdpause()
+      {
+        callaction("dvd", "pause");
+      }
+
+      function dvdplay()
+      {
+        callaction("dvd", "play");
+      }
+
+      function volumeup()
+      {
+        callaction("amp", "volume up");
+      }
+
+      function volumedown()
+      {
+        callaction("amp", "volume down");
+      }
+
+      function callaction(device, action){
+        $http.post('/api/device/action', {"device": device, "action":action});
+      }
+
+      return{
+        volumedown : volumedown,
+        volumeup : volumeup,
+        dvdplay : dvdplay,
+        dvdpause:dvdpause
       }
 
     });

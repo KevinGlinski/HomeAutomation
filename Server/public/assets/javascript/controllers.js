@@ -88,3 +88,34 @@ automationApp.controller('BasementLightController', function ($scope, $element, 
 
 
     });
+
+    automationApp.controller('AppController', function ($scope, $element, sceneService, lightService) {
+
+});
+
+automationApp.controller('MovieController', function ($scope, $element, deviceService, sceneService, lightService) {
+  $scope.play = function(){
+    deviceService.dvdplay();
+    sceneService.setScene("Basement", "Low Light");
+  }
+
+  $scope.pause = function(){
+    deviceService.dvdpause();
+    sceneService.setScene("Basement", "Movie Pause");
+  }
+
+  $scope.volumeup = function(){
+    deviceService.volumeup();
+  }
+
+  $scope.volumedown = function(){
+    deviceService.volumedown();
+  }
+
+  $scope.setMovieScene = function(){
+    sceneService.setScene("Basement", "Low Light");
+  }
+  $scope.setLightsUp = function(){
+    sceneService.setScene("Basement", "Movie Pause");
+  }
+});

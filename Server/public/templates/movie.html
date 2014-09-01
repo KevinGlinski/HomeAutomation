@@ -1,0 +1,88 @@
+<style>
+.glyphicon{
+  font-size:200px;
+}
+
+.action{
+  border-radius:25px;
+  padding:5px;
+}
+
+.action:active{
+  background-color:#444444;
+}
+
+.light-action{
+  height:200px;
+  width:200px;
+  background-image:url('/assets/images/light-on.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.light-action-off{
+  background-image:url('/assets/images/light-off.png');
+
+}
+
+.light-action-on{
+  background-image:url('/assets/images/light-on.png');
+}
+
+</style>
+
+<div ng-controller="MovieController" >
+
+
+  <table style="width:850px; height:600px">
+    <tr height="75px">
+      <td>
+
+        <button class='btn-lg btn-block' ng-click='toggleAllLights()'>
+          Closed Caption
+        </button>
+      </td>
+      <td>
+
+      </td>
+
+
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+        <span class="action glyphicon glyphicon-play" ng-click='play()'></span>
+      </td>
+      <td>
+        <span class="action glyphicon glyphicon-volume-up" ng-click='volumeup()'></span>
+      </td>
+
+
+      <td>
+        <div class="action light-action light-action-on" ng-click="setLightsUp()">
+
+        </div>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="action glyphicon glyphicon-pause" ng-click='pause()'></span>
+      </td>
+      <td>
+        <span class="action glyphicon glyphicon-volume-down" ng-click='volumedown()'></span>
+      </td>
+      <td>
+
+        <div class="action light-action light-action-off" ng-click="setMovieScene()" >
+
+
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
