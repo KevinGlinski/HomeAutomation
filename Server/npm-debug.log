@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json /home/pi/HomeAutomation/Server/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/pi/HomeAutomation/Server',
+6 verbose install   [ 'express',
+6 verbose install     'body-parser',
+6 verbose install     'serve-static',
+6 verbose install     'connect',
+6 verbose install     'seiyria-bootstrap-slider' ] ]
+7 verbose from cache /home/pi/HomeAutomation/Server/package.json
+8 info preinstall node-api@
+9 verbose read json /home/pi/HomeAutomation/Server/node_modules/body-parser/package.json
+10 verbose read json /home/pi/HomeAutomation/Server/node_modules/connect/package.json
+11 verbose read json /home/pi/HomeAutomation/Server/node_modules/express/package.json
+12 verbose read json /home/pi/HomeAutomation/Server/node_modules/serve-static/package.json
+13 verbose read json /home/pi/HomeAutomation/Server/node_modules/sockjs/package.json
+14 verbose read json /home/pi/HomeAutomation/Server/node_modules/sse/package.json
+15 verbose from cache /home/pi/HomeAutomation/Server/package.json
+16 verbose readDependencies using package.json deps
+17 verbose from cache /home/pi/HomeAutomation/Server/node_modules/body-parser/package.json
+18 verbose from cache /home/pi/HomeAutomation/Server/node_modules/connect/package.json
+19 verbose from cache /home/pi/HomeAutomation/Server/node_modules/express/package.json
+20 verbose from cache /home/pi/HomeAutomation/Server/node_modules/serve-static/package.json
+21 verbose from cache /home/pi/HomeAutomation/Server/node_modules/sockjs/package.json
+22 verbose from cache /home/pi/HomeAutomation/Server/node_modules/sse/package.json
+23 verbose already installed skipping express@~4.0.0 /home/pi/HomeAutomation/Server
+24 verbose already installed skipping body-parser@~1.0.1 /home/pi/HomeAutomation/Server
+25 verbose already installed skipping serve-static@~1.5.3 /home/pi/HomeAutomation/Server
+26 verbose already installed skipping connect@2.25.7 /home/pi/HomeAutomation/Server
+27 verbose cache add [ 'seiyria-bootstrap-slider@3.1.0', null ]
+28 verbose cache add name=undefined spec="seiyria-bootstrap-slider@3.1.0" args=["seiyria-bootstrap-slider@3.1.0",null]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: 'seiyria-bootstrap-slider@3.1.0',
+29 verbose parsed url   path: 'seiyria-bootstrap-slider@3.1.0',
+29 verbose parsed url   href: 'seiyria-bootstrap-slider@3.1.0' }
+30 verbose cache add name="seiyria-bootstrap-slider" spec="3.1.0" args=["seiyria-bootstrap-slider","3.1.0"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '3.1.0',
+31 verbose parsed url   path: '3.1.0',
+31 verbose parsed url   href: '3.1.0' }
+32 verbose addNamed [ 'seiyria-bootstrap-slider', '3.1.0' ]
+33 verbose addNamed [ '3.1.0', '3.1.0' ]
+34 silly lockFile 4160d805-seiyria-bootstrap-slider-3-1-0 seiyria-bootstrap-slider@3.1.0
+35 verbose lock seiyria-bootstrap-slider@3.1.0 /home/pi/.npm/4160d805-seiyria-bootstrap-slider-3-1-0.lock
+36 verbose url raw seiyria-bootstrap-slider/3.1.0
+37 verbose url resolving [ 'https://registry.npmjs.org/',
+37 verbose url resolving   './seiyria-bootstrap-slider/3.1.0' ]
+38 verbose url resolved https://registry.npmjs.org/seiyria-bootstrap-slider/3.1.0
+39 info trying registry request attempt 1 at 00:36:55
+40 http GET https://registry.npmjs.org/seiyria-bootstrap-slider/3.1.0
+41 http 404 https://registry.npmjs.org/seiyria-bootstrap-slider/3.1.0
+42 silly registry.get cb [ 404,
+42 silly registry.get   { date: 'Mon, 01 Sep 2014 00:36:56 GMT',
+42 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+42 silly registry.get     'content-type': 'application/json',
+42 silly registry.get     'cache-control': 'max-age=0',
+42 silly registry.get     'content-length': '52',
+42 silly registry.get     'accept-ranges': 'bytes',
+42 silly registry.get     via: '1.1 varnish',
+42 silly registry.get     age: '0',
+42 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+42 silly registry.get     'x-cache': 'MISS',
+42 silly registry.get     'x-cache-hits': '0',
+42 silly registry.get     'x-timer': 'S1409531816.398088,VS0,VE79',
+42 silly registry.get     'keep-alive': 'timeout=10, max=50',
+42 silly registry.get     connection: 'Keep-Alive' } ]
+43 silly lockFile 4160d805-seiyria-bootstrap-slider-3-1-0 seiyria-bootstrap-slider@3.1.0
+44 silly lockFile 4160d805-seiyria-bootstrap-slider-3-1-0 seiyria-bootstrap-slider@3.1.0
+45 error 404 'seiyria-bootstrap-slider' is not in the npm registry.
+45 error 404 You should bug the author to publish it
+45 error 404
+45 error 404 Note that you can also install from a
+45 error 404 tarball, folder, or http url, or git url.
+46 error System Linux 3.12.22+
+47 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+48 error cwd /home/pi/HomeAutomation/Server
+49 error node -v v0.10.0
+50 error npm -v 1.2.14
+51 error code E404
+52 verbose exit [ 1, true ]
